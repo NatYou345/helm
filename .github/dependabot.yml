@@ -2,6 +2,7 @@ version: 2
 
 updates:
   - package-ecosystem: "gomod"
+    open-pull-requests-limit: 100
     directory: "/"
     schedule:
       interval: "daily"
@@ -16,6 +17,7 @@ updates:
           - "k8s.io/client-go"
           - "k8s.io/kubectl"
   - package-ecosystem: "github-actions"
+    open-pull-requests-limit: 100
     directory: "/"
     schedule:
       interval: "daily"
